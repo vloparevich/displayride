@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+        <!--<listener class-name="utility.ExtentReporterNG" />-->
+    </listeners>
+
+    <parameter name="browserName"       value="chrome"/>
+    <parameter name="deviceName"        value="My Nougat-2"/>
+    <parameter name="udid"              value="1100021017263836"/>
+    <parameter name="platformName"      value="Android"/>
+    <parameter name="appPackage"        value="displayride.displayrideandroidapp"/>
+    <parameter name="appActivity"       value="MainActivity"/>
+    <parameter name="newCommandTimeout" value="3600"/>
+    <parameter name="unicodeKeyboard"   value="true"/>
+    <parameter name="resetKeyboard"     value="true"/>
+    <parameter name="fullReset"         value=""/>
+    <parameter name="noReset"           value=""/>
+    <parameter name="portNumber"    value="7000"/>
+    <parameter name="accessoryId"   value="20D160DA877A"/>
+    <parameter name="riderName"     value="    天花板 WqF 天花板 Abc 天 花     "/>
+
+    <test name="Test-">
+        <classes>
+            <class name="tests.android.DisplayLaterDefault_FULL_RESET_OldTest"/>
+        </classes>
+    </test>
+
+</suite>

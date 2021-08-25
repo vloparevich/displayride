@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+        <!--<listener class-name="utility.ExtentReporterNG" />-->
+    </listeners>
+
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="deviceName" value="My Nougat-4"/>
+    <parameter name="udid" value="1120021017098946"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="appPackage" value="displayride.displayrideandroidapp"/>
+    <parameter name="appActivity" value="MainActivity"/>
+    <parameter name="newCommandTimeout" value="3600"/>
+    <parameter name="unicodeKeyboard" value="true"/>
+    <parameter name="resetKeyboard" value="true"/>
+    <parameter name="fullReset" value="false"/>
+    <parameter name="noReset" value="true"/>
+    <parameter name="portNumber" value="7004"/>
+    <parameter name="accessoryId" value="20D160DA877A"/>
+    <parameter name="riderName"         value="John Smith"/>
+
+    <test name="TestSuite-For-Nougat-4">
+        <classes>
+            <class name="tests.android.appsettingsview.AppSettingsAdModeTest"/>
+            <class name="tests.android.appsettingsview.AppSettingsDisplayModeTest"/>
+            <class name="tests.android.appsettingsview.LicensePlateNumberDisplayNowTest"/>
+            <class name="tests.android.appsettingsview.LicensePlateNumberInputFieldTest"/>
+
+            <class name="tests.android.settingsview.AllCarriersButtonsTurnOn"/>
+            <class name="tests.android.settingsview.CarrierButtonTurnOnTest"/>
+            <class name="tests.android.settingsview.CarriersButtonsTurnOffTest"/>
+            <class name="tests.android.settingsview.FloatingWidgetTurnOff"/>
+            <class name="tests.android.settingsview.FloatingWidgetTurnOn"/>
+            <class name="tests.android.settingsview.TwoCarriersButtonTurnOnTest"/>
+            <class name="tests.android.settingsview.UiElementsTextConsistencyTest"/>
+
+            <class name="tests.android.AboutViewConsistencyDRTest"/>
+            <class name="tests.android.AddNameInputFieldTest"/>
+            <class name="tests.android.CabServicesInputFieldTest"/>
+            <class name="tests.android.CabServicesPopupListTest"/>
+            <class name="tests.android.DisplayLaterDefault_FULL_RESET_OldTest"/>
+            <class name="tests.android.DisplayLaterTest"/>
+            <class name="tests.android.DRAppLaunch5Times"/>
+<!--            <class name="tests.android.FloatingWidgetTest"/>-->
+            <class name="tests.android.MainViewDisplayNowTest"/>
+            <class name="tests.android.MainViewDisplayStopTest"/>
+            <class name="tests.android.MainViewDRTest"/>
+            <class name="tests.android.NameFieldNameFindTest"/>
+            <class name="tests.android.SecondMainViewDRTest"/>
+            <class name="tests.android.StopDisplayingYesTest"/>
+        </classes>
+    </test>
+
+
+    <packages>
+        <package name="tests.android.settingsview" />
+    </packages>
+
+    <packages>
+        <package name="tests.android.appsettingsview" />
+    </packages>
+
+</suite>

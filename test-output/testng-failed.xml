@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="appPackage" value="displayride.displayrideandroidapp"/>
+  <parameter name="noReset" value="true"/>
+  <parameter name="deviceName" value="My Nougat-2"/>
+  <parameter name="fullReset" value="false"/>
+  <parameter name="riderName" value="John Smith"/>
+  <parameter name="portNumber" value="7000"/>
+  <parameter name="appActivity" value="MainActivity"/>
+  <parameter name="newCommandTimeout" value="3600"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="accessoryId" value="20D160C61745"/>
+  <parameter name="unicodeKeyboard" value="true"/>
+  <parameter name="udid" value="1100021017263836"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="resetKeyboard" value="true"/>
+  <listeners>
+    <listener class-name="utility.Listeners"/>
+  </listeners>
+  <test name="Test-Performance(failed)">
+    <classes>
+      <class name="tests.android.performance.RebootAccessoryTest">
+        <methods>
+          <include name="cleanLognDevice"/>
+          <include name="onStartingMethodWithinClass"/>
+          <include name="launchingAndroidDriver"/>
+          <include name="baseTestSetUp"/>
+          <include name="rebootingAccessoryTest"/>
+          <include name="basicSettings"/>
+          <include name="baseTearDown"/>
+        </methods>
+      </class> <!-- tests.android.performance.RebootAccessoryTest -->
+    </classes>
+  </test> <!-- Test-Performance(failed) -->
+</suite> <!-- Failed suite [Suite] -->

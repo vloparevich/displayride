@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+        <!--<listener class-name="utility.ExtentReporterNG" />-->
+    </listeners>
+
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="deviceName" value="My Nougat-1"/>
+    <parameter name="udid" value="1120021017099097"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="appPackage" value="displayride.displayrideandroidapp"/>
+    <parameter name="appActivity" value="MainActivity"/>
+    <parameter name="newCommandTimeout" value="1500"/>
+    <parameter name="unicodeKeyboard" value="true"/>
+    <parameter name="resetKeyboard" value="true"/>
+    <parameter name="fullReset" value="false"/>
+    <parameter name="noReset" value="true"/>
+    <parameter name="portNumber" value="6000"/>
+    <parameter name="accessoryId"   value="20D1608A6F9B"/>
+    <parameter name="riderName"     value=" 天花板 WqF 天花板 Abc 天 花     "/>
+<!--
+    <test name="Test-1">
+        <classes>
+            <class name="tests.AddNameInputFieldTest"/>
+        </classes>
+    </test>
+-->
+
+    <test name="Test-2">
+        <classes>
+            <class name="tests.android.MainViewDisplayNowTest"/>
+        </classes>
+    </test>
+
+<!--
+    <test name="Test-3">
+        <classes>
+            <class name="tests.MainViewDisplayStopTest"/>
+        </classes>
+    </test>
+-->
+
+ <!--   <test name="Test-4">
+        <classes>
+            <class name="tests.DisplayLaterTest"/>
+        </classes>
+    </test>
+-->
+</suite>

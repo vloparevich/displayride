@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+        <!--<listener class-name="utility.ExtentReporterNG"/>-->
+    </listeners>
+
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="deviceName" value="Oreo Phone"/>
+    <parameter name="udid" value="JF4L6SINCE8DMFU8"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="appPackage" value="displayride.displayrideandroidapp"/>
+    <parameter name="appActivity" value="MainActivity"/>
+    <parameter name="newCommandTimeout" value="3600"/>
+    <parameter name="unicodeKeyboard" value="true"/>
+    <parameter name="resetKeyboard" value="true"/>
+    <parameter name="fullReset" value="false"/>
+    <parameter name="noReset" value="true"/>
+    <parameter name="portNumber" value="8000"/>
+    <parameter name="riderName" value="Marshmallow"/>
+    <parameter name="accessoryId" value=""/> <!--Add Accessory ID-->
+
+    <!--<parameter name="&#45;&#45;session-override" value = "true"/>-->
+    <test name="Smoke">
+
+        <classes>
+            <class name="tests.android.settingsview.UiElementsTextConsistencyTest"/>
+            <class name="tests.android.settingsview.CarrierButtonTurnOnTest"/>
+            <class name="tests.android.settingsview.CarriersButtonsTurnOffTest"/>
+            <class name="tests.android.settingsview.FloatingWidgetTurnOn"/>
+            <class name="tests.android.settingsview.FloatingWidgetTurnOff"/>
+            <class name="tests.android.settingsview.TwoCarriersButtonTurnOnTest"/>
+            <class name="tests.android.settingsview.AllCarriersButtonsTurnOn"/>
+        </classes>
+
+    </test>
+
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+            <listener class-name="utility.Listeners" />
+    </listeners>
+
+
+    <parameter name="deviceName"                    value="iPhone s2"/>
+    <parameter name="platformName"                  value="iOS"/>
+    <parameter name="platformVersion"               value="11.3.1"/>
+    <parameter name="udid"                          value="24763a1441ed0a8f3d5c792dace1040c24c9229f"/>
+    <parameter name="appiumVersion"                 value="1.8.1"/>
+    <parameter name="automationName"                value="XCUITest"/>
+    <parameter name="wdaLocalPort"                  value="8200"/>
+    <parameter name="noReset"                       value="true"/>
+    <parameter name="fullReset"                     value="false"/>
+    <parameter name="newCommandTimeout"             value="3600"/>
+    <parameter name="resetKeyboard"                 value="true"/>
+    <parameter name="portNumber"                    value="12002"/>
+
+    <test name="TestSuite-For-iPhone-2">
+        <classes>
+            <class name="tests.ios.MainViewDRTest"/>
+        </classes>
+    </test>
+</suite>

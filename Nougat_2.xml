@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+        <!-- <listener class-name="utility.ExtentReporterNG" />-->
+    </listeners>
+
+    <parameter name="browserName"       value="chrome"/>
+    <parameter name="deviceName"        value="My Nougat-2"/>
+    <parameter name="udid"              value="1100021017263836"/>
+    <parameter name="platformName"      value="Android"/>
+    <parameter name="appPackage"        value="displayride.displayrideandroidapp"/>
+    <parameter name="appActivity"       value="MainActivity"/>
+    <parameter name="newCommandTimeout" value="3600"/>
+    <parameter name="unicodeKeyboard"   value="true"/>
+    <parameter name="resetKeyboard"     value="true"/>
+    <parameter name="fullReset"         value="false"/>
+    <parameter name="noReset"           value="true"/>
+    <parameter name="portNumber"        value="7000"/>
+    <parameter name="accessoryId"       value="20D160C61745"/>
+    <parameter name="riderName"         value="John Smith"/>
+
+
+    <test name="Test-Performance">
+        <classes>
+            <!--<class name="tests.android.performance.RebootDeviceTest"/>
+            <class name="tests.android.performance.KillDisplayRideAppTest"/>-->
+            <class name="tests.android.performance.RebootAccessoryTest"/>
+        </classes>
+    </test>
+
+</suite>

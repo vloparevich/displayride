@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1560" started-at="2019-04-04T03:19:44Z" finished-at="2019-04-04T03:19:45Z">
+    <groups>
+    </groups>
+    <test name="Test-Performance" duration-ms="1560" started-at="2019-04-04T03:19:44Z" finished-at="2019-04-04T03:19:45Z">
+      <class name="tests.android.performance.RebootAccessoryTest">
+        <test-method status="FAIL" signature="baseTestSetUp(java.lang.String)[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="baseTestSetUp" is-config="true" duration-ms="2379" started-at="2019-04-04T06:19:41Z" finished-at="2019-04-04T06:19:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.appium.java_client.service.local.InvalidServerInstanceException">
+            <message>
+              <![CDATA[Invalid server instance exception has occured: There is no installed nodes! Please install node via NPM (https://www.npmjs.com/package/appium#using-node-js) or download and install Appium app (http://appium.io/downloads.html)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: Invalid server instance exception has occured: There is no installed nodes! Please install node via NPM (https://www.npmjs.com/package/appium#using-node-js) or download and install Appium app (http://appium.io/downloads.html)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.findNodeInCurrentFileSystem(AppiumServiceBuilder.java:156)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.checkAppiumJS(AppiumServiceBuilder.java:317)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:397)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:332)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.buildService(AppiumDriverLocalService.java:76)
+	at baseplatformANDROID.BaseTest.baseTestSetUp(BaseTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Program Files\nodejs\node_modules\npm\bin\node_modules\npm\bin\npm-cli.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Program Files\nodejs\node_modules\npm\bin\node_modules\npm\bin\npm-cli.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+
+	at io.appium.java_client.service.local.AppiumServiceBuilder.findNodeInCurrentFileSystem(AppiumServiceBuilder.java:157)
+	... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.InvalidServerInstanceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTestSetUp -->
+        <test-method status="SKIP" signature="launchingAndroidDriver(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="launchingAndroidDriver" is-config="true" duration-ms="0" started-at="2019-04-04T06:19:44Z" finished-at="2019-04-04T06:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingAndroidDriver -->
+        <test-method status="SKIP" signature="cleanLognDevice(java.lang.String)[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="cleanLognDevice" is-config="true" duration-ms="0" started-at="2019-04-04T06:19:45Z" finished-at="2019-04-04T06:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanLognDevice -->
+        <test-method status="SKIP" signature="onStartingMethodWithinClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="onStartingMethodWithinClass" is-config="true" duration-ms="0" started-at="2019-04-04T06:19:45Z" finished-at="2019-04-04T06:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onStartingMethodWithinClass -->
+        <test-method status="SKIP" signature="rebootingAccessoryTest(java.lang.String)[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="rebootingAccessoryTest" duration-ms="1" started-at="2019-04-04T06:19:45Z" data-provider="riderName-Provider-2" finished-at="2019-04-04T06:19:45Z">
+          <exception class="io.appium.java_client.service.local.InvalidServerInstanceException">
+            <message>
+              <![CDATA[Invalid server instance exception has occured: There is no installed nodes! Please install node via NPM (https://www.npmjs.com/package/appium#using-node-js) or download and install Appium app (http://appium.io/downloads.html)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.InvalidServerInstanceException: Invalid server instance exception has occured: There is no installed nodes! Please install node via NPM (https://www.npmjs.com/package/appium#using-node-js) or download and install Appium app (http://appium.io/downloads.html)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.findNodeInCurrentFileSystem(AppiumServiceBuilder.java:156)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.checkAppiumJS(AppiumServiceBuilder.java:317)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:397)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:332)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.buildService(AppiumDriverLocalService.java:76)
+	at baseplatformANDROID.BaseTest.baseTestSetUp(BaseTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Program Files\nodejs\node_modules\npm\bin\node_modules\npm\bin\npm-cli.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Program Files\nodejs\node_modules\npm\bin\node_modules\npm\bin\npm-cli.js'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+
+	at io.appium.java_client.service.local.AppiumServiceBuilder.findNodeInCurrentFileSystem(AppiumServiceBuilder.java:157)
+	... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.InvalidServerInstanceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rebootingAccessoryTest -->
+        <test-method status="SKIP" signature="baseTearDown()[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="baseTearDown" is-config="true" duration-ms="0" started-at="2019-04-04T06:19:45Z" finished-at="2019-04-04T06:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTearDown -->
+        <test-method status="SKIP" signature="basicSettings()[pri:0, instance:tests.android.performance.RebootAccessoryTest@5ec0a365]" name="basicSettings" is-config="true" duration-ms="0" started-at="2019-04-04T06:19:45Z" finished-at="2019-04-04T06:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicSettings -->
+      </class> <!-- tests.android.performance.RebootAccessoryTest -->
+    </test> <!-- Test-Performance -->
+  </suite> <!-- Suite -->
+</testng-results>
